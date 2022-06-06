@@ -9,7 +9,7 @@ const TWITTER_HANDLE = 'k_0214'
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`
 const OPENSEA_LINK = ''
 const TOTAL_MINT_COUNT = 50
-const CONTRACT_ADDRESS = '0x4ecBD7D6d27C64D19839e322BD5B4d8CD7b31B0E'
+const CONTRACT_ADDRESS = '0x2FF27B484E890f0049C2309501F8268B7D84c640'
 
 const App = () => {
 	const [currentAccount, setCurrentAccount] = useState('')
@@ -109,7 +109,7 @@ const App = () => {
 				await nftTxn.wait()
 
 				console.log(
-					`Mined, see transaction: https://rinkeby.etherscan.io/tx/${nftTxn.hash}`
+					`Minted, see transaction: https://rinkeby.etherscan.io/tx/${nftTxn.hash}`
 				)
 			}
 		} catch (error) {
